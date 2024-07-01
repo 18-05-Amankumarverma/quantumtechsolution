@@ -46,6 +46,10 @@ header .pages-links li a {
   color: white;
   text-decoration: none;
 }
+header .free-consultancy {
+  display: flex;
+  justify-content: space-between;
+}
 header .free-consultancy button {
   border: none;
   background-color: var(--header-txt-color);
@@ -53,6 +57,18 @@ header .free-consultancy button {
   color: white;
   font-weight: 600;
   border-radius: 10px;
+}
+header .free-consultancy .logedUserDetails img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+header .free-consultancy .logedUserDetails span {
+  background-color: crimson;
+}
+#click{
+  display:none;
 }
 
 section {
@@ -369,10 +385,10 @@ footer .foot-info {
   transform: translate(-50%, -50%);
 }
 footer .foot-info h5 {
-  font-size: 16px;
+  font-size: 12px;
 }
 footer .foot-info h6 {
-  font-size: 12px;
+  font-size: 10px;
 }
 footer .foot-info .social-icons {
   display: flex;

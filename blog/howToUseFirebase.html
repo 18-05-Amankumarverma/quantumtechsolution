@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <title>How to Use Firebase RealTime Database for Auth</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        h2,
+        h3,
+        h4 {
+            padding: 12px 0px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul {
+            padding: 20px 15px;
+            padding-left: 25px;
+        }
+
+        ul h6 {
+            font-size: 20px;
+        }
+
+        li {
+            padding: 2px 0px;
+        }
+
+        section {
+            padding: 100px 10px;
+            border-radius: 10px;
+
+        }
+
+        .writtenBy,
+        .date {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .mainBlog {
+            padding: 30px 20px;
+            background-color: #1c1c1c;
+            text-align: left;
+        }
+
+        .articleTitle {
+            padding: 10px 0px;
+            padding-bottom: 30px;
+        }
+
+        .rightSide {
+            top: 0px;
+            padding: 30px 10px;
+            background-color: #232222;
+            border-radius: 10px;
+        }
+
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-12 menu">
+                    <div class="logo">
+                        <h4>quantumtechsolution</h4>
+                        <h6>simplify development</h6>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12"> 
+                    <input type="checkbox" id="click" name="click">
+                    <div class="pages-links">
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../index.html#about">About</a></li>
+                            <li><a href="../allPages/courses.html" target="_blank">Courses</a></li>
+                            <li><a href="../index.html#products">Products</a></li>
+                            <li><a href="../index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--
+                
+                <div class="col-md-2 col-12">
+                    <div class="free-consultancy">
+                        /<button><a href="#contact" style="color:#fff;">free consultancy</a></button>/
+                        <button id="login">Login</button>
+                        <div class="logedUserDetails">
+                            <a href="loginDetails.html">
+                                <img src="https://www.stryx.com/cdn/shop/articles/man-looking-attractive.jpg?v=1666662774" alt="" id="logedUserImage">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            -->
+
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container mainBlog">
+            <div class="row">
+                <div class="col-md-8 col-12">
+                    <main class="leftSide">
+                        <div class="articleTitle">
+                            <h1>How to use Firebase RealTime Database for Auth</h1>
+                            <h6 class="date">Mon 10 2024 </h6>
+                            <h6 class="writtenBy">Written By - Aman Kumar Verma</h6>
+                        </div>
+                        <article id="aboutFirebase">
+                            <h3>#What is Firebase?</h3>
+                            <p > Firebase Realtime Database is a cloud-hosted NoSQL database that allows Developers to
+                                store and sync data in real time across all of their users' devices.
+                                Firebase is used by a variety of companies, including Airbnb, Coca-Cola and Pinterest.
+
+                                When Any one using Firebase as their database need they don't have to care about the
+                                backend
+                                the backend is provided by Firebase.
+                            </p>
+                        </article>
+                        <article  id="howToUse">
+                            <h3>#How to use Firebase for Auth?</h3>
+                            <p>
+                                Before going on the Auth, use must have to know what is Auth . Auth or Authentication is
+                                the process by which a person or system verifies that they are who they say they are
+                                In simple way whenever you try to purchase any things through e-commerce website eg
+                                Amazon, Myntra
+                                you first have to signIn or have to Create an Account this is an example of real world
+                                Auth based scanerio.
+
+                            <ol>
+                                <li>First you have to Create an Account on Firebase.</li>
+                                <li>After that you will transfer to Dashboard or if you not redirected to Dashboard then
+                                    find <span>go to console</span> option.</li>
+                                <li>Then Search for add project Option and fill all details of your application or
+                                    website.</li>
+                                <li>Then click on Project Overview --> Project Settings which is Present of left side
+                                    panel.</li>
+                                <li>Scroll Down and copy your Configuration code and paste in your website.</li>
+                                <li>On left side panel their is an Authentication option click on it and choose auth
+                                    provider for this case we will choose google for our auth provider.</li>
+                                <li>After Completing these process Know move to Integration in web topics.</li>
+
+                            </ol>
+                            </p>
+
+                        </article>
+                        <article id="cdnlinks">
+                            <h3>#Integration in Web</h3>
+                            <ul>
+                                <li>https://cdnjs.cloudflare.com/ajax/libs/firebase/10.12.2/firebase-app-compat.min.js"
+                                    integrity="sha512-7VG+AGc4sddCVxEvzT+Z8fjIWq1Hrnnhp2swwiXXNnKT1cYB4vCyHPFO6JhQjQQ/oa26fNK0mpFg4vTvxBS3sw=="
+                                    crossorigin="anonymous" referrerpolicy="no-referrer"></li>
+                                <li>https://cdnjs.cloudflare.com/ajax/libs/firebase/10.12.2/firebase-auth-compat.min.js"
+                                    integrity="sha512-KjIesTv/W/AhBjwjMjEzMZgIKwfzBnvRhc/UCHWukIHJvpxTN8/vvYHX7cwQSc4OcwYAjLd6cAWbAuFqR5vZCA=="
+                                    crossorigin="anonymous" referrerpolicy="no-referrer"></li>
+                                <li>https://cdnjs.cloudflare.com/ajax/libs/firebase/10.12.2/firebase-firestore-compat.min.js"
+                                    integrity="sha512-tR8LqQ63s+NuKDdtuehjKG13GGxKoTWXsF7qhgdc3l6vul6Wo8N7qnHTCuOJmQ8LdUC+7HphupqtMXysWZN5vg=="
+                                    crossorigin="anonymous" referrerpolicy="no-referrer"</li>
+                            </ul>
+                            <blockquote>
+                                copy one by one these CDN links and paste in the script tag
+                            </blockquote>
+                            <pre>
+                                    <code class="language-javascript">
+const app = firebase.initializeApp(firebaseConfig)
+var provider = new firebase.auth.GoogleAuthProvider();
+
+firebase.auth()
+.signInWithPopup(provider)
+.then((result) => {
+    var credential = result.credential;
+    var token = credential.accessToken;
+    var user = result.user;
+}).catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    var email = error.email;
+    var credential = error.credential;
+
+});
+                                    </code>
+                                </pre>
+
+
+                        </article>
+                    </main>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="rightSide">
+                        <ul class="importantLinks">
+                            <h6 style="color:crimson;">Links</h6>
+                            <li><a href="#aboutFirebase">What is Firebase</a></li>
+                            <li><a href="#howToUse">How to use Firebase for Auth</a></li>
+                            <li><a href="#cdnlinks">Integration in Web</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-12" style="margin:0px;padding:0px">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#000" fill-opacity="1" d="M0,160L1440,32L1440,320L0,320Z"></path>
+                    </svg>
+                    <div class="foot-info">
+                        <h5>Find an issue with this page? <a href="">Fix it on GitHub</a></h5>
+                        <h5>Need help? Email <b>quantumtechsolution@gmail.com</b></h5>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-2x fa-youtube"></i></a>
+                            <a href=""><i class="fa-brands fa-2x fa-discord"></i></a>
+                            <a href=""><i class="fa-brands fa-2x fa-github"></i></a>
+                            <a href=""><i class="fa-brands fa-2x fa-twitter"></i></a>
+                        </div>
+                        <h4>HELPFUL LINKS</h4>
+                        <div class="foot-links">
+                            <a href="../index.html#courses">Courses</a> |
+                            <a href="">Privacy</a> |
+                            <a href="">Terms</a> |
+                            <a href="howToUseFirebase.html">Blogs</a>
+                        </div>
+                        <h6>copyright 2024 LLC</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js"
+        integrity="sha512-1M9vud0lqoXACA9QaA8IY8k1VR2dMJ2Qmqzt9pN2AH7eQHWpNsxBpaayV0kKkUsF7FLVQ2sA2SSc8w5VOm7/mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+    <script>hljs.highlightAll();</script>
+
+</body>
+
+</html>

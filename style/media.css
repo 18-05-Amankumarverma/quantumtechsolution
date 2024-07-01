@@ -1,0 +1,169 @@
+@media screen and (max-width:986px) {
+    section .boxes101 .box .image {
+        height: 80%;
+        padding: 30px 0px;
+    }
+
+    .core-services .service-showcase .image {
+        height: 66%;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .core-services .service-showcase .txt h3 {
+        color: #000;
+        text-align: left;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    section .boxes101 .box .image {
+        padding: 0px 0px;
+    }
+
+    .service-margin {
+        margin: 30px 0px;
+    }
+
+    .pre .pre-center .pre-work-container {
+        padding: 10px;
+        color: #000;
+        margin: 40px 0px;
+        width: 100%;
+    }
+
+    .pre .pre-center .pre-work-container .pre-work {
+        padding: 16px;
+        border-radius: 10px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pre .pre-center .pre-work-container .pre-work .pre-desc {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    .pre .pre-center .pre-work-container .pre-work .pre-work-img {
+        width: 100%;
+    }
+
+    .bussiness-card .bussiness-card-card {
+        padding: 20px;
+        border-radius: 12px;
+        background-color: #fff;
+        width: 100%;
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .bussiness-card .bussiness-card-card .image {
+        width: 100%;
+    }
+
+    .bussiness-card .bussiness-card-card .txt {
+        width: 100%;
+    }
+
+    footer {
+        padding: 0px 0px;
+        padding-bottom: 0px;
+        text-align: center;
+        margin-top: 100px;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    section .view-portfolio button:last-child {
+        background-color: rgb(77, 76, 76);
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    header{
+        background: #313030;
+    
+    }
+    header .logo {
+        color: #fff;
+        padding: 10px 0px;
+        padding-bottom:0px;
+    }
+
+    header {
+        padding: 0px;
+    }
+
+    header .logo h4 {
+        font-size: 20px;
+    }
+
+    header .logo h6 {
+        font-size: 10px;
+    }
+
+    .pages-links {
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        left: -500px;
+        top: 1px;
+        z-index: 999;
+        transition:all .8s;
+        background-color:#343333;
+    }
+
+    header .pages-links ul {
+        display: flex;
+        padding: 12px;
+        background-color:#343333;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 0px;
+        border-radius:0px;
+    }
+
+    header .pages-links li {
+        list-style-type: none;
+        padding: 30px 0px;
+    }
+
+    header .pages-links li a {
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    #click{   
+        display: block;
+        position: absolute;
+        top:-40px;
+        right: 21px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #click:checked ~ .pages-links {
+        left: 0px;
+
+    }
+    section .motive div h1{
+        font-size:40px;
+    }
+    .bussiness-card .bussiness-card-card .txt h1 {
+        font-size:30px;
+    }
+}

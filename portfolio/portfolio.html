@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio</title>
+</head>
+
+<body class="h-screen ">
+
+    <div class="inset-0 backdrop-blur-xl bg-white/30 fixed hidden" id="slotBookingForm">
+        <div>
+            <img src="https://icons.veryicon.com/png/o/miscellaneous/medium-thin-linear-icon/cross-23.png"
+                class="h-9 float-right mx-20 my-6" alt="" id="crossIcon">
+        </div>
+        <form class="max-w-[400px]  rounded p-4 mx-auto my-10 px-10 ">
+            <h1 class="text-3xl font-semibold text-center">Book Slot</h1>
+            <div class="[&>*]:h-[40px] [&>*]:w-[22rem] rounded flex flex-col justify-center items-center my-5">
+                <label for="name" class="text-xl font-semibold my-[2px]">Name</label>
+                <input type="text" name="name" class="border-2 border-gray-300 mb-3 " />
+                <label for="email" class="text-xl font-semibold my-[2px]">Email</label>
+                <input type="text" class="border-2 border-gray-300 mb-3 ">
+                <label for="phno" class="text-xl font-semibold my-[2px]">Phone no.</label>
+                <input type="text" class="border-2 border-gray-300 mb-3 ">
+                <label for="message" class="text-xl font-semibold my-[2px]">Message</label>
+                <input type="text" class="border-2 border-gray-300 mb-3 ">
+
+                <input type="submit" value="Submit" class="bg-black rounded text-white my-5">
+            </div>
+        </form>
+    </div>
+    <div class="text-[#1d1d1d]">
+        <div class="md:w-[1200px] mx-auto">
+            <header class=" py-10 flex justify-between items-center px-5  h-14 ">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo" class="h-20 w-40" />
+                </div>
+                <div id="menubar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png"
+                        class="h-8 w-8" alt="">
+                </div>
+                <nav id="menu">
+                    <ul
+                        class="sub-menu flex gap-8 justify-end items-center h-14 [&>*]:h-full [&>*]:flex [&>*]:items-center">
+                        <li>
+                            <img src="https://icons.veryicon.com/png/o/miscellaneous/medium-thin-linear-icon/cross-23.png"
+                                class="h-8 w-8" alt="cross-icon" id="navbar-hide-cross">
+                        </li>
+                        <li><a href="#" class="font-semibold">Playground</a></li>
+                        <li class="group ">
+                            <a href="https://quantumtechsolution.in.net/" class="font-semibold">Services</a>
+                            <ul id="sub-menu-hidden"
+                                class=" absolute bg-[#E5E7EB] border-1 text-black border-slate-900 rounded p-4 text-sm font-semibold [&>*]:py-2 hidden group-hover:block top-16 [&>*]:cursor-pointer">
+                                <li><a href="https://quantumtechsolution.in.net/">Website design</a></li>
+                                <li><a href="https://quantumtechsolution.in.net/">Software Developement</a></li>
+                                <li><a href="https://quantumtechsolution.in.net/">UI/UX</a></li>
+                                <li><a href="https://quantumtechsolution.in.net/">Version Control</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="font-semibold">Case Studies</a></li>
+                        <li><a href="#" class="font-semibold">About me</a></li>
+                    </ul>
+                </nav>
+                <div class="flex justify-between gap-3 items-center  " id="header-right">
+                    <div class="text-center mr-6">
+                        <h5 class="font-bold text-gray-400 text-[13px]">Jharkhand, Jamshedpur</h5>
+                        <span class="inline-block font-bold text-[#1b1b1b]" id="timezone">6:01:23 pm</span>
+                    </div>
+                    <button
+                        class="bg-gray-200 text-gray-700 rounded border border-gray-500 text-sm h-[40px] w-28 font-semibold">Slot
+                        Booked</button>
+                    <button
+                        class="bg-gray-200 text-gray-700 rounded border border-gray-500 text-sm h-[40px] w-28 font-semibold">Slot
+                        Booked</button>
+                    <span
+                        class="bg-[#1b1b1b] flex justify-center items-center font-bold text-white h-[40px] w-10 rounded cursor-pointer"
+                        id="plusIcon">+</span>
+                </div>
+            </header>
+
+            <section class="">
+                <div class="columns-2 h-full md:w-[1200px] mx-auto" id="landing-page">
+                    <div class="pt-40 pb-40 " id="left-box">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHQc9k7_KC6Pw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724599573736?e=1737590400&v=beta&t=_A1mEBpD0kXyz8NpTpQkzvmHAEg9NQoVS03SRuQmi8M" class="h-16 w-16 rounded-full" alt="profile_image">
+                        <div>
+                            <h1 class="text-6xl font-normal">Hello! I'm <span class="text-[#FD6035]" id="name">Aman
+                                    Kumar Verma</span></h1>
+                        </div>
+                    </div>
+                    <div class="pt-40" id="right-box">
+                        <div>
+                            <h1 class="text-3xl font-normal ">A Website Designer based in Jamshedpur, Jharkhand</h1>
+                            <p class=" quote font-normal text-gray-400">Passionate creating great experience for Digital Product</p>
+
+                        </div>
+                        <div class="pt-10 flex gap-2">
+                            <a href="mailto:akverma2017.jsr@gmail.com"
+                                class="pt-3 pb-3 pl-5 pr-5 bg-black font-semibold text-white border-2 border-gray-300  rounded hover:bg-white hover:text-black">Talk
+                                with me</a>
+                            <a href="#works"
+                                class="pt-3 pb-3 pl-5 pr-5 bg-white font-semibold text-black  border-2 border-gray-300 rounded hover:bg-black hover:text-white">See
+                                my work</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+    <div
+        class="floatings-social-icons bg-gray-200 w-[50px] p-1 rounded-[10px] fixed top-[13rem] right-0 border-2 border-gray-300">
+        <ul class="p-1 flex gap-3 flex-col">
+            <li>
+                <img src="images/instagram.png" alt="instagram" class="h-7 w-7">
+            </li>
+            <li>
+                <img src="images/dribble.png" alt="dribble" class="h-7 w-7">
+            </li>
+            <li>
+                <a
+                    href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">
+                    <img src="images/linkedin (2).png" alt="linkedin" class="h-7 w-7">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="bg-[#F5F5F0]" >
+        <section class=" text-[#1d1d1d] pt-10 pb-10 pr-5 pl-5">
+            <div class="flex justify-between items-center md:w-[1200px] mx-auto work-details">
+                <div>
+                    <h1 class="font-normal text-3xl pb-5 work-details-heading">Working experience</h1>
+                    <ul class="flex flex-col justify-center ">
+                        <li>
+                            <div class="p-2 pt-3 rounded-md m-2 flex gap-5">
+                                <img src="https://www.kunalitechnology.in/images/logo-icon.png" alt="" class="h-9  rounded ">
+                                <div class="work-details-title">
+                                    <h3>Web Designing - <span class="font-semibold"> Kunal i Technology</span></h3>
+                                    <h5 class="text-[11px] font-semibold text-[#939393]">October 2023 - November 2023
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="border-t-2 border-gray-200">
+                            <div class="p-2 pt-3 rounded-md m-2 flex gap-5">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXpWhGFQdQhlhIxqjp5uSFUijTeUb_j6qVg&s" alt="" class="h-9  rounded ">
+                                <div class="work-details-title">
+                                    <h3>Web Designing - <span class="font-semibold"> PHN Tech.</span></h3>
+                                    <h5 class="text-[11px] font-semibold text-[#939393]">June 2022 - July 2022
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="font-normal text-3xl pb-5 work-details-heading">Awwards and Recoginition</h1>
+                    <ul class="flex flex-col justify-between ">
+                        <li>
+                            <div class="p-2 pt-3 rounded-md m-2 flex gap-5">
+                                <img src="https://www.kunalitechnology.in/images/logo-icon.png" alt="" class="h-9  rounded ">
+                                <div class="">
+                                    <h3>Web Designing - <span class="font-semibold"> Kunal i Technology</span></h3>
+                                    <h5 class="text-[11px] font-semibold text-[#939393]">October 2023 - November 2023
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="border-t-2 border-gray-200">
+                            <div class="p-2 pt-3 rounded-md m-2 flex gap-5">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDXpWhGFQdQhlhIxqjp5uSFUijTeUb_j6qVg&s" alt="" class="h-9  rounded ">
+                                <div class="">
+                                    <h3>Web Designing - <span class="font-semibold"> PHN Tech.</span></h3>
+                                    <h5 class="text-[11px] font-semibold text-[#939393]">June 2022 - July 2022
+                                    </h5>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="md:w-[1200px] mx-auto py-20" id="experience">
+            <div class="flex justify-between" id="languages">
+                <div class="flex flex-col">
+                    <h1 class="text-3xl py-5">Experience with a variety of <br> Projects and Industries.</h1>
+                    <p>Versatile experience across diverse projects and industries, bringing <br>adpatability and valuable skills to any task. </p>
+                    <div class="pt-10 flex gap-2">
+                        <a href="mailto:akverma2017.jsr@gmail.com"
+                            class="pt-3 pb-3 pl-5 pr-5 bg-black font-semibold text-white border-2 border-gray-300  rounded hover:bg-white hover:text-black">Talk
+                            with me</a>
+                        <a href="https://github.com/18-05-Amankumarverma"
+                            class="pt-3 pb-3 pl-5 pr-5 bg-white font-semibold text-black  border-2 border-gray-300 rounded hover:bg-black hover:text-white">See
+                            my work</a>
+                    </div>
+                </div>
+
+                
+                
+   
+                <div id="tech-skilla-icons" class="flex justify-evenly items-stretch flex-col">
+                    <div class="flex justify-between gap-7">
+                        <div class="h-[100px] w-[100px]  bg-gray-200 rounded flex justify-center items-center flex-col border-2 border-gray-300 ">
+                            <img src="images/atom.png" alt="language-icon">
+                        </div>
+                        <div class="h-[100px] w-[100px]  bg-gray-200 rounded flex justify-center items-center flex-col border-2 border-gray-300">
+                            <h5 class="text-2xl font-[700]">50+</h5>
+                            <span class="text-gray-400 font-[500] text-[14px]">Projects</span>
+                        </div>
+                        <div class="h-[100px] w-[100px]  bg-gray-200 rounded flex justify-center items-center flex-col border-2 border-gray-300">
+                            <img src="images/developer.png" alt="language-icon">
+                        </div>
+                        <div class="h-[100px] w-[100px]  bg-gray-200 rounded flex justify-center items-center flex-col border-2 border-gray-300">
+                            <h5 class="text-2xl font-[700]">40+</h5>
+                            <span class="text-gray-400 font-[500] text-[14px] text-center">Website Design</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center gap-4">
+                        <div class="h-[100px] w-[100px]  bg-gray-200 rounded flex justify-center items-center flex-col border-2 border-gray-300">
+                            <h5 class="text-2xl font-[700]">80+</h5>
+                            <span class="text-gray-400 font-[500]  text-[14px] text-center">Happy Clients</span>
+                        </div>
+                        <div class="h-[100px] w-[100px]  bg-gray-200 rounded flex justify-center items-center flex-col border-2 border-gray-300">
+                            <img src="images/django.png" alt="">
+                        </div>
+                        <div class="h-[100px] w-[100px]  bg-gray-200 rounded flex justify-center items-center flex-col border-2 border-gray-300">
+                            <h5 class="text-2xl font-[700]">8+</h5>
+                            <span class="text-gray-400 font-[500] text-[14px]">Experience</span>
+                        </div>
+                        <div class="h-[100px] w-[100px]  bg-gray-200 rounded flex justify-center items-center flex-col border-2 border-gray-300">
+                            <img src="images/html.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    <div class="bg-[#F5F5F0]" >
+        <section class="md:w-[1200px] mx-auto " id="works">
+            <div>
+                <h1 class="text-center text-4xl py-20">Selected Works</h1>
+            </div>
+            <div class="flex flex-wrap gap-9 justify-center items-center">
+               
+                <div class="max-w-[400px] border-2 border-gray-200 p-5 rounded-md bg-white">
+                    <div>
+                        <img src="https://dhbsdanmyarnqhiuhjom.supabase.co/storage/v1/object/sign/images/Screenshot%202024-11-15%20112525.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVuc2hvdCAyMDI0LTExLTE1IDExMjUyNS5wbmciLCJpYXQiOjE3MzE5NDMwNTcsImV4cCI6MTc2MzQ3OTA1N30.x6UNr-63aZ3ki4R3ri1F9sCubxv31tMFf7OPCiV477Q&t=2024-11-18T15%3A17%3A13.980Z" class="h-48 w-full" alt="website-image">
+                    </div>
+                    <div>
+                        <h2 class="font-700 text-3xl py-4">Dashboard</h2>
+                        <h3 class="text-xl">Bank Dashboard Website Design</h3>
+                        <span class="inline-block text-gray-500 text-sm">October 23</span>
+                        <p class="text-gray-600 py-2 text-justify">Simple But working Bank Dashboard design made with <span>javaScript</span> <span>Html/CSS</span> .</p>
+                        <button class="bg-black text-white rounded-md py-2 px-5 my-5"><a href="https://github.com/18-05-Amankumarverma/bank">View Detail Work</a></button>
+                    </div>
+                </div>
+                <div class="max-w-[400px] border-2 border-gray-200 p-5 rounded-md bg-white">
+                    <div>
+                        <img src="https://dhbsdanmyarnqhiuhjom.supabase.co/storage/v1/object/sign/images/Screenshot%202024-11-15%20005505.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVuc2hvdCAyMDI0LTExLTE1IDAwNTUwNS5wbmciLCJpYXQiOjE3MzE5NDMzODksImV4cCI6MTc2MzQ3OTM4OX0.9LxPZCSXogw0jUprwl9CWeVU-YyXmwJhe4Sjy7CxXyY&t=2024-11-18T15%3A22%3A46.646Z" class="h-48 w-full" alt="website-image">
+                    </div>
+                    <div>
+                        <h2 class="font-700 text-3xl py-4">Password Manager (UI/UX)</h2>
+                        <h3 class="text-xl">IPassword PWA Design</h3>
+                        <span class="inline-block text-gray-500 text-sm">November 24</span>
+                        <p class="text-gray-600 py-2 text-justify"> Password Manager (PWA) design which i have uploaded on Bahance.</p>
+                        <button class="bg-black text-white rounded-md py-2 px-5 my-5"><a href="https://www.behance.net/gallery/212533135/Password-Manager-%28PWA%29">View Detail Work</a></button>
+                    </div>
+                </div>
+                <div class="max-w-[400px] border-2 border-gray-200 p-5 rounded-md bg-white">
+                    <div>
+                        <img src="https://dhbsdanmyarnqhiuhjom.supabase.co/storage/v1/object/sign/images/Screenshot%202024-11-15%20113051.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvU2NyZWVuc2hvdCAyMDI0LTExLTE1IDExMzA1MS5wbmciLCJpYXQiOjE3MzE5NDM3NTEsImV4cCI6MTc2MzQ3OTc1MX0.tfgY6Xmqpjs7vpEcd5IOa0uCA5CbNVHTRIUdaqRSVjE&t=2024-11-18T15%3A28%3A48.713Z" class="h-48 w-full" alt="website-image">
+                    </div>
+                    <div>
+                        <h2 class="font-700 text-3xl py-4">Peace Fondation (NGO)</h2>
+                        <h3 class="text-xl">NGO Website Design</h3>
+                        <span class="inline-block text-gray-500 text-sm">November 23</span>
+                        <p class="text-gray-600 py-2 text-justify">College Project which i have made during my Industrial Training.</p>
+                        <button class="bg-black text-white rounded-md py-2 px-5 my-5"><a href="https://github.com/18-05-Amankumarverma/peace5.0">Detail Work</a></button>
+                    </div>
+                </div>
+                <div class="max-w-[400px] border-2 border-gray-200 p-5 rounded-md bg-white">
+                    <div>
+                        <img src="https://dhbsdanmyarnqhiuhjom.supabase.co/storage/v1/object/sign/images/PyReader.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJpbWFnZXMvUHlSZWFkZXIucG5nIiwiaWF0IjoxNzMxOTQ1MDE2LCJleHAiOjE3NjM0ODEwMTZ9.CCn6uufjvUbwwBr-DtsLdcqjGp5r-DvFxaCDp7ERv_I&t=2024-11-18T15%3A49%3A53.676Z" class="h-48 w-full" alt="website-image">
+                    </div>
+                    <div>
+                        <h2 class="font-700 text-3xl py-4">PyReader</h2>
+                        <h3 class="text-xl">AI Based PDF Reader</h3>
+                        <span class="inline-block text-gray-500 text-sm">November 24</span>
+                        <p class="text-gray-600 py-2 text-justify">This is django based project which read your pdf and provide audio. </p>
+                        <button class="bg-black text-white rounded-md py-2 px-5 my-5"><a href="https://github.com/18-05-Amankumarverma/pyAIReader">View Detail Work</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="md:w-[1200px] mx-auto text-center py-40" id="testimonals">
+                <div>
+                    <ul class="flex justify-center items-center gap-5 py-4">
+                        <li>
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/005/346/410/small_2x/close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-on-isolated-light-gray-studio-background-photo.jpg" alt=""  class="h-20 rounded-md border-2 border-gray-300">
+                        </li>
+                        <li>
+                            <img src="https://media.istockphoto.com/id/613557584/photo/portrait-of-a-beautifull-smiling-man.jpg?s=612x612&w=0&k=20&c=hkCg5CrmTKOApePbPOyo1U9GexEfIJOJqoLXJIvcN8E=" alt="" class="h-20 rounded-md border-2 border-gray-300">
+                        </li>
+                        <li>
+                            <img src="https://media.istockphoto.com/id/1388648617/photo/confident-caucasian-young-man-in-casual-denim-clothes-with-arms-crossed-looking-at-camera.jpg?s=612x612&w=0&k=20&c=YxctPklAOJMmy6Tolyvn45rJL3puk5RlKt39FO46ZeA=" alt="" class="h-28 rounded-md border-2 border-gray-300">
+                        </li>
+                        <li>
+                            <img src="https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1hbnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="h-20 rounded-md border-2 border-gray-300">
+                        </li>
+                        <li>
+                            <img src="https://media.istockphoto.com/id/1310533180/photo/cheerful-fashionable-adult-man-in-city-setting.jpg?s=612x612&w=0&k=20&c=hfy_5L8llmz_sUp1_n1NbM5Gsyk0kUbJRmR3TXAaoMM=" alt="" class="h-20 rounded-md border-2 border-gray-300">
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="py-3 text-xl text-gray-400 ">"Aman Kumar Verma is an Exceptional Website Designer who transformed our online <br/> His creativity and attention to detail exceeded our<br/> expections. Steller work!"</p>
+                    <h5 class="text-black py-3 font-[600] ">Shubham Sharma, Marketing Director </h5>
+                    <h6 class="font-[500] text-gray-500 "></h6>
+                </div>
+        </section>
+    </div>
+   
+    <section class="md:w-[1200px] mx-auto  text-center py-24">
+        <div>
+            <h1 class="text-4xl font-semibold">Let's talk with me</h1>
+            <button class="px-10 py-2 bg-black text-white rounded-sm my-5"><a
+                    href="mailto:akverma@gmail.com">Email</a></button>
+        </div>
+    </section>
+
+    <footer class="md:w-[1200px] mx-auto py-10">
+        <div class="py-2 flex justify-between items-center footer-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" class="h-20 w-40 rounded-full" />
+            </div>
+            <div>
+                <ul class="flex gap-5 justify-end items-center">
+                    <li>
+                        <a href="https://quantumtechsolution.in.net/" class="font-semibold">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-semibold">About me</a>
+                    </li>
+                    <li>
+                        <a href="" class="font-semibold">Api</a>
+                    </li>
+                    <li>
+                        <a href="https://quantumtechsolution.in.net/blog/howToUseFirebase.html" class="font-semibold">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module">
+        import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm"
+
+
+        const supabaseUrl = 'https://dhbsdanmyarnqhiuhjom.supabase.co'
+        const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRoYnNkYW5teWFybnFoaXVoam9tIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE2NDk2ODEsImV4cCI6MjA0NzIyNTY4MX0.EJvy21VEsZNZ4u-yRorazYi9WCpLIhn67GjUiESCKvo"
+        const supabase = createClient(supabaseUrl, supabaseKey)
+
+
+        const { data, error } = await supabase
+            .from('PortfolioBookingMessage')
+            .insert({ id: 2, name: "ravi", email: "ravi@gmail.com", phno: 9006554651, message: "hi how are " })
+            
+
+
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+#menubar{
+    display:none;
+}
+#navbar-hide-cross {
+    display:none;
+}
+
+@media (orientation: landscape) and (max-device-width: 480px) {
+    body {
+        display:none;
+    }
+}
+@media screen and (max-width:500px){
+    header{
+        display:none;
+    }
+    #menubar{
+        display:inline-block;
+    }
+    #name{
+        font-size:45px;
+    }
+    
+    #header-right{
+        display:none;
+    }
+    .sub-menu{
+        padding-top:50px;
+    }
+    #navbar-hide-cross{
+        height: 40px;
+        width: 43px;
+        display: block;
+        position: absolute;
+        right: 25px;
+    }
+    .sub-menu li{
+        height:50px;
+        padding:50px 0px;
+    }
+    .sub-menu li a{
+        font-size:30px;
+        font-weight:500;
+    }
+    #menu{
+        display:none
+    }
+    #menu ul{
+        justify-content:normal;
+        flex-direction: column;
+        height: 79vh;
+        gap: 0;
+        background-color: rgb(239, 239, 239);
+        width: 100%;
+        position: absolute;
+        left: 0px;
+        padding: 0px;
+        margin: 0px;
+        top:0px;
+        align-items: center;
+    }
+    #sub-menu-hidden{
+        display:none;
+    }
+    #header-right{
+        display: none;
+    }
+    #landing-page{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        padding-left:10px;
+        padding-right:10px;
+    }
+    #left-box{
+        padding-top:70px;
+        padding-bottom:50px;
+        font-size:25px;
+        
+    }
+    #menubar{
+        display:block
+    }
+    .quote{
+        margin-top:10px
+    }
+    #left-box div h1{
+        text-align: left;
+        
+    }
+    #left-box div h1 ,#left-box div h1 span {
+        font-size:50px;
+        margin-top: 2px;
+    }
+   
+    #right-box{
+        padding-top:0px;
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        padding-bottom:50px;
+    }
+    .quote{
+        padding-top: 11px;
+    }
+    #right-box h1{
+        /* FONT-VARIANT: JIS83; */
+    }
+    #right-box h1,#right-box p{
+        text-align:left;
+    }
+    .work-details{
+        flex-direction:column;
+        gap:40px;
+    }
+    .work-details-heading{
+        text-align:center;
+    }
+
+    #testimonals div ul li img{
+        height:80px;
+        width:80px;
+    }
+    #testimonals div ul li:nth-child(even){
+        display:none;
+    }
+    #testimonals div ul li:nth-child(3) img{
+        height:100px;
+        width:100px;
+    }
+   
+    #experience{
+        padding:0px 10px;
+    }
+    #works{
+        padding:0px 10px;
+    }
+
+    footer .footer-container{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    #languages{
+        flex-direction:column;
+    }
+    #tech-skilla-icons{
+        gap: 17px;
+    margin-top: 30px;
+    }
+    #tech-skilla-icons div div{
+        height: 80px;
+        width: 80px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid gray;
+    }
+}
+
+
+ #tech-skilla-icons div div{
+        height: 80px;
+        width: 80px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+ 
